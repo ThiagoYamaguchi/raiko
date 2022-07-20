@@ -4,8 +4,19 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/templates.css">
-    <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="assets/css/templates.css">
+    <link rel="shortcut icon" href="assets/images/favicon.png" type="image/x-icon">
+    <script type="text/javascript">
+        window.onload = function() {
+            document.querySelector(".menuMobile").addEventListener("click", function() {
+                if(document.querySelector(".menu nav ul").style.display == 'flex') {
+                    document.querySelector(".menu nav ul").style.display = 'none';
+                } else {
+                    document.querySelector(".menu nav ul").style.display = 'flex';
+                }
+            });
+        };
+    </script>
     <title>Raiko</title>
 </head>
 <body>
@@ -13,17 +24,23 @@
     <header>
         <div class="container">
             <div class="logo">
-                <a href="https://github.com/ThiagoYamaguchi/Raiko"><img src="images/raiko.png" alt="Raiko"></a>
+                <a href="https://github.com/ThiagoYamaguchi/Raiko"><img src="assets/images/raiko.png" alt="Raiko"></a>
             </div>
             <div class="menu">
                 <nav>
+                    <div class="menuMobile">
+                        <div class="mm_line"></div>
+                        <div class="mm_line"></div>
+                        <div class="mm_line"></div>
+                    </div>
                     <ul>
                         <li class="active"><a href="">HOME</a></li>
-                        <li><a href="">HOME</a></li>
-                        <li><a href="">HOME</a></li>
-                        <li><a href="">HOME</a></li>
-                        <li><a href="">HOME</a></li>
-                        <li><a href="">HOME</a></li>
+                        <li><a href="">BlOQ</a></li>
+                        <li><a href="">PAGES</a></li>
+                        <li><a href="">DEPARTAMENTS</a></li>
+                        <li><a href="">TIMETABLE</a></li>
+                        <li><a href="">GALLERY</a></li>
+                        <li><a href="">CONTACT</a></li>
                     </ul>
                 </nav>
             </div>
@@ -82,7 +99,7 @@
                                     <div class="news_comments">2</div>
                                 </div>
                                 <div class="news_thumbnail">
-                                    <img src="images/tokyo.jpg" alt="Tokyo">
+                                    <img src="assets/images/tokyo.jpg" alt="Tokyo">
                                 </div>
                                 <div class="news_title">
                                     Lorem ipsum dolor sit amat velum
@@ -99,7 +116,7 @@
                                     <div class="news_comments">2</div>
                                 </div>
                                 <div class="news_thumbnail">
-                                    <img src="images/tokyo.jpg" alt="Tokyo">
+                                    <img src="assets/images/tokyo.jpg" alt="Tokyo">
                                 </div>
                                 <div class="news_title">
                                     Lorem ipsum dolor sit amat velum
@@ -116,7 +133,7 @@
                                     <div class="news_comments">2</div>
                                 </div>
                                 <div class="news_thumbnail">
-                                    <img src="images/tokyo.jpg" alt="Tokyo">
+                                    <img src="assets/images/tokyo.jpg" alt="Tokyo">
                                 </div>
                                 <div class="news_title">
                                     Lorem ipsum dolor sit amat velum
@@ -133,7 +150,7 @@
                                     <div class="news_comments">2</div>
                                 </div>
                                 <div class="news_thumbnail">
-                                    <img src="images/tokyo.jpg" alt="Tokyo">
+                                    <img src="assets/images/tokyo.jpg" alt="Tokyo">
                                 </div>
                                 <div class="news_title">
                                     Lorem ipsum dolor sit amat velum
@@ -184,20 +201,142 @@
                         </div>
                         <div class="widget_separation_bar"></div>
                         <div class="contact">
-                            <img class="contact_img" src="images/phone.png" alt="phone">By Phone:<strong>(19) 9999-9999</strong> 
+                            <img class="contact_img" src="assets/images/phone.png" alt="phone">By Phone:<strong>(19) 9999-9999</strong> 
                         </div>
                         <div class="widget_separation_bar"></div>
                         <div class="contact">
-                            <img class="contact_img" src="images/email.png" alt="email">By e-mail:<strong>raiko@email.com </strong> 
+                            <img class="contact_img" src="assets/images/email.png" alt="email">By e-mail:<strong>raiko@email.com </strong> 
                         </div>
                         <div class="widget_separation_bar"></div>
                         <div class="contact">
-                            <img class="contact_img" src="images/relatorio.png" alt="relatorio">or<strong>fill on the form </strong>on our contact page 
+                            <img class="contact_img" src="assets/images/relatorio.png" alt="relatorio">or<strong>fill on the form </strong>on our contact page 
                         </div>
                     </div>
                 </div>
             </aside>
         </div>
     </section>
+
+    <footer>
+        <div class="container flexColumn">
+            <div class="footer_menu">
+                <div class="fm_1">
+                    <div class="banner-title">The end</div>
+                    <a href="">    
+                        <div class="banner-description">If you need a doctor urgently outside of Raiko opening hours &#8594</div>
+                    </a>    
+                </div>
+                <div class="fm_2">
+                    <div class="banner-title">The Answer</div>
+                    <a href="">
+                        <div class="banner-description">If you need a doctor urgently outside of Raiko opening hours &#8594</div>
+                    </a>
+                </div>
+                <div class="fm_3">
+                    <div class="banner-title">Never broke Again</div>
+                    <a href="">
+                        <div class="banner-description">If you need a doctor urgently outside of Raiko opening hours &#8594</div>
+                    </a>    
+                </div>
+            </div>
+            <div class="footer_area">
+                <div class="footer_areaitem">
+                    <div class="widget_title">
+                        <div class="widget_title_text">Raiko</div>
+                        <div class="widget_title_bar"></div>
+                    </div>
+                    <div class="widget_body">
+                        <div class="footer_description">
+                            Labore in beatae, provident fuga optio esse commodi, asperiores odit natus.
+                        </div>
+                        <div class="footer_end">
+                            <div class="adress">
+                                <div>Raiko</div>    
+                            </div>    
+                            <div class="adress">
+                                <div>95 Divne Sout</div>
+                                <div>+123 456 789</div>
+                            </div>
+                            <div class="adress">    
+                                <div>Kloster Foux</div>
+                                <div>+123 555 789</div>
+                            </div>
+                            <div class="adress">
+                                <div>Sansaski toy 7889, Brasil</div>
+                                <div class="adress_email">raiko@gmail.com</div>
+                            </div>
+                        </div>
+                        <div class="footer_midia">
+                            <img class="midia" src="assets/images/facebook.png" alt="facebook">
+                            <img class="midia" src="assets/images/twitter.png" alt="twitter">
+                            <img class="midia" src="assets/images/instagram.png" alt="instagram">
+                            <img class="midia" src="assets/images/email_midia.png" alt="email_midia">
+                        </div>
+                    </div>
+                </div>    
+                <div class="footer_areaitem">
+                    <div class="footer_areaitem">
+                        <div class="widget_title">
+                            <div class="widget_title_text">Latest Posts</div>
+                            <div class="widget_title_bar"></div>
+                        </div>
+                        <div class="widget_body">
+                            <div class="posts">
+                                &#8594 Vero deleniti maiores voluptatum est ea autem omnis animi.
+                                <div class="posts_date">
+                                    6 years ago
+                                </div>
+                            </div>
+                            <div class="posts">
+                                &#8594 Accusantium provident nemo, placeat dolore reiciendis cum sunt maiores magnam facere ducimus debitis.
+                                <div class="posts_date">
+                                    7 years ago
+                                </div>
+                            </div>  
+                            <div class="posts">
+                                &#8594 Totam provident hic maxime quasi est dolorem in magnam.
+                                <div class="posts_date">
+                                    8 years ago
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer_areaitem">
+                    <div class="footer_areaitem">
+                        <div class="widget_title">
+                            <div class="widget_title_text">Latest Tweets</div>
+                            <div class="widget_title_bar"></div>
+                        </div>
+                        <div class="widget_body">
+                            <div class="tweets">
+                                &#8594 Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloremque nesciunt omnis eligendi quia ipsam tempore in odit voluptatibus aliquam ipsum! Reprehenderit magnam quasi corrupti animi iste tempore ducimus aliquid voluptate... <a class="tweets_link" href="">https://github.com/ThiagoYamaguchi</a>
+                                <div class="posts_date">
+                                    6 years ago
+                                </div>
+                            </div>
+                            <div class="tweets">
+                                &#8594 Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloremque nesciunt omnis eligendi quia ipsam tempore in odit voluptatibus aliquam ipsum! Reprehenderit magnam quasi corrupti animi iste tempore ducimus aliquid voluptate... <a class="tweets_link" href="">https://github.com/ThiagoYamaguchi</a>
+                                <div class="posts_date">
+                                    7 years ago
+                                </div>
+                            </div>  
+                            <div class="tweets">
+                                &#8594 Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloremque nesciunt omnis eligendi quia ipsam tempore in odit voluptatibus aliquam ipsum! Reprehenderit magnam quasi corrupti animi iste tempore ducimus aliquid voluptate... <a class="tweets_link" href="">https://github.com/ThiagoYamaguchi</a>
+                                <div class="posts_date">
+                                    8 years ago
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>  
+
+            <div class="footer_copy">
+                &#169 Copyright - Todos os direitos reservados
+            </div>
+
+        </div>
+    </footer>
 </body>
 </html>
