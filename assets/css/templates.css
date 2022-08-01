@@ -148,23 +148,22 @@ nav .active a, nav a:hover {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    
+    margin-top: 55px;
 }
 .widget_body_square a {
     text-decoration: none;
     cursor: pointer;
-}
-.widget_body_square a h4 {
-    color: #ffffff;    
-    font-size: 17px;
-    text-align: center;
-    margin-top: 60px;
+    margin-top: 30px;
 }
 .widget_square {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     width: 150px;
     height: 150px;
     background-color: #7062EE;
-    margin-top: 20px;
+    color: #ffffff;    
+    font-size: 17px;
 }
 .widget_square:hover {
     background-color: #503EF1;
@@ -383,7 +382,7 @@ footer .footer_description {
         margin-top: 70px;
     }
     #geral section, #geral aside {
-        padding: 20px;
+        padding: 40px;
     }
     .footer_menu{
         flex-direction: column;
